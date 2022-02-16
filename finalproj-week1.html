@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elena Ferrante</title>
+    <style>
+      body {
+        background: radial-gradient(
+          788px at 0.7% 3.4%,
+          rgb(164, 231, 192) 0%,
+          rgb(255, 255, 255) 90%
+        );
+      }
+      h1 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 50px;
+        text-align: center;
+      }
+      h2 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 50px;
+      }
+      img {
+        display: block;
+        margin: 30px auto;
+        border-radius: 10px;
+        width: 400px;
+      }
+      div {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 20px;
+      }
+      p {
+        margin-top: 30px;
+      }
+      span {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    .neapolitanNovels {
+      width: 600px;
+    }
+      a {
+        color: blue;
+        text-decoration: underline;
+        line-height: 30px;
+      }
+      a:hover {
+        color: purple;
+        text-decoration: none;
+      }
+      button {
+        display: block;
+        margin: 20px auto 50px;
+        padding: 17px 12px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        background-color: #60a0b0;
+        border: 10px transparent;
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px grey;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: black;
+        background-color: #ddeedf;
+        cursor: pointer;
+      }
+      .author {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📖 Elena Ferrante 📖</h1>
+    <h2>The distinguished, but mysterious Italian author</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/182/original/image-asset.jpeg?1644849697"
+      alt="Books by Elena Ferrante"
+    />
+    <div>
+      <p>
+        Elena Ferrante is the author of many internationally acclaimed novels,
+        originally written in Italian and translated by Ann Goldstein. She is
+        particularly known for her four-volume work,
+        <strong>the Neapolitan Novels</strong>: 
+        <ul>
+          <em>
+          <li>
+            My Brilliant Friend
+          </li>
+          <li>
+            The Story of a New Name
+          </li>
+          <li>
+            Those Who Leave and Those Who Stay
+          </li>
+          <li>
+            The Story of the Lost Child
+          </li>
+          </em>
+        </ul>
+        <img class="neapolitanNovels"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/296/original/0df18390580b5ac16a1eb426c6e62e72.jpeg?1644971944" alt="Neapolitan Novels">
+        But actually Elena Ferrante is a pseudonym used by an
+        unknown author. The mystery around her true identity makes her books
+        even more interesting. Ferrante holds that "books, once they are written, have no need of their authors." She has repeatedly argued that anonymity is a precondition for her work and that keeping her true name out of the spotlight is key to her writing process.
+      </p>
+      <p>Despite being recognized as a novelist on an international scale, Ferrante has kept her identity secret since the 1992 publication of her first novel. Speculation as to her true identity has been rife, and several theories, based on information Ferrante has given in interviews as well as analysis drawn from the content of her novels, have been put forth.</p>
+      <span>
+        <a href="http://elenaferrante.com/" target="_blank">
+          Read more about Elena Ferrante
+        </a>
+      </span>
+    </div>
+    <br />
+    <button>Buy Elena Ferrante's books 📚</button>
+    <hr />
+    <p class="author">Coded by Paula Marotti</p>
+    <script>
+      function buyBooks() {
+        let inUSA = prompt("Are you based in the US?");
+
+        if (inUSA.toLowerCase() === "yes") {
+          window.location.href = "https://www.amazon.com/s?k=elena+ferrante&crid=2BHTPCTTQLYGB&sprefix=elena+ferrante%2Caps%2C222&ref=nb_sb_ss_ts-doa-p_1_14"
+        } else {
+          alert(
+            "Elena Ferrante's books are currently only available in the US"
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyBooks);
+    </script>
+  </body>
+</html>
